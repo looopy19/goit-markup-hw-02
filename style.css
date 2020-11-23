@@ -1,0 +1,220 @@
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #FFFFFF */
+/* акцент текста #757575 */
+/* акцент текста снизу rgba(255, 255, 255, 0.6) */
+/* цвет акцент #2196F3 */
+/* фоновый цвет #FFFFFF #E5E5E5 */
+/* доп фоновый цвет #F5F4FA */
+
+/* Основной шрифт Roboto 400 */
+/*  Навигация и имена команды Roboto 500 */
+/* Заголовки и кнопка Roboto 700 */
+/* Заголовок героя Roboto 900 */
+/* Лого Raleway 700 */
+
+:root {
+  /* colors */
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --additional-white-color: #ffffff;
+  --additional-black-color: #000000;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --primary-bg-color: #ffffff;
+  --hero-bg-color: #2f303a;
+  --additional-bg-color: #f5f4fa;
+  /* fonts */
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --main-font-size: 14px;
+  --secondary-font-size: 16px;
+  --title-font-size: 36px;
+}
+
+/* глобальные */
+.page {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  font-family: var(--main-font);
+  font-size: var(--main-font-size);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* лого */
+
+.logo {
+  color: var(--additional-black-color);
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.logo-part {
+  color: var(--accent-color);
+}
+
+/* навигация */
+
+.page-nav,
+.upper-contacts {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.upper-contacts a {
+  color: var(--secondary-text-color);
+}
+.page-nav .current,
+.page-nav a:hover,
+.page-nav a:focus,
+.upper-contacts a:hover,
+.upper-contacts a:focus,
+.bottom-contacts a:hover,
+.bottom-contacts a:focus {
+  color: var(--accent-color);
+}
+
+/* main */
+
+.hero-section {
+  background-color: var(--hero-bg-color);
+}
+
+.hero-title {
+  color: var(--additional-white-color);
+  font-family: var(--secondary-font);
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.btn {
+  color: var(--additional-white-color);
+  background-color: var(--accent-color);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.about-section h3 {
+  font-size: var(--main-font-size);
+  font-style: normal;
+  font-weight: bold;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.description {
+  color: var(--secondary-text-color);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.section .section-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--title-font-size);
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-list h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--secondary-font-size);
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+
+.team {
+  background-color: var(--additional-bg-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* подвал */
+
+.logo.footer {
+  color: var(--additional-white-color);
+}
+
+.page-footer {
+  background-color: var(--hero-bg-color);
+}
+
+.bottom-contacts {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.bottom-contacts a {
+  color: var(--footer-link-color);
+}
+
+.bottom-contacts p {
+  color: var(--additional-white-color);
+}
+
+/* Портфолио */
+
+.projects p {
+  color: var(--secondary-text-color);
+}
+
+.nav-list .button {
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.button {
+  font-family: var(--main-font);
+  color: var(--primary-text-color);
+  background-color: var(--additional-bg-color);
+}
+.is-current,
+.button:hover,
+.button:focus {
+  color: var(--additional-white-color);
+  background-color: var(--accent-color);
+}
